@@ -11,13 +11,13 @@ import {
   useColorModeValue,
   chakra,
 } from '@chakra-ui/react';
-import { ChevronRightIcon } from '@chakra-ui/icons';
+import { DownloadIcon } from '@chakra-ui/icons';
 import Paragraph from '../components/paragraph';
 // import { BioSection, BioYear } from '../components/bio';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { GridItem } from '../components/grid-item.js';
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5';
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 // import thumbYouTube from '../public/images/links/youtube.png';
 // import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png';
 import Image from 'next/image';
@@ -64,11 +64,11 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/test1.png"
+              src="/images/test1.jpg"
               alt="Profile image"
               borderRadius="full"
-              width="100"
-              height="100"
+              width="100%"
+              height="100%"
             />
           </Box>
         </Box>
@@ -83,124 +83,82 @@ const Home = () => (
           Technological University. I have passion in Tech and is eager to learn
           about new technologies. I love to develop functional applications.
         </Paragraph>
+
         <Box align="center" my={4}>
-          <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Experience
-            </Button>
-          </NextLink>
+          {/* <NextLink href="/works" passHref scroll={false}> */}
+          <Button rightIcon={<DownloadIcon />} colorScheme="teal">
+            Résumé
+          </Button>
+          {/* </NextLink> */}
         </Box>
       </Section>
-
-      {/* <Section delay={0.2}>
+      <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Have code with
         </Heading>
-        <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
-        </BioSection>
-        <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection>
-        <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
-        </BioSection>
-      </Section> */}
+        <Box
+          borderRadius="lg"
+          mb={6}
+          p={3}
+          textAlign="left"
+          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          css={{ backdropFilter: 'blur(10px)' }}
+        >
+          <Heading variant='section-content'>
+            Languages
+          </Heading>
+          <Paragraph>
+            Python, Javascript, Typescript, Java, C, HTML/CSS
+          </Paragraph>
+          <br />
+          <Heading variant='section-content'>
+            Frameworks/Libraries & Tools
+          </Heading>
+          <Paragraph>
+            React, Nextjs, Express, Nodejs, SpringBoot, Threejs, Prisma, MongoDB, PostgreSQL, Git, Prettier, NPM, Postman
+          </Paragraph>
 
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          Things I ♥
-        </Heading>
-        <Paragraph>
-          Programming👨🏻‍💻 , Badminton🏸 , Volleyball🏐 , Gym🏋🏻, Bouldering🧗,
-          Video Games🎮
-        </Paragraph>
+        </Box>
       </Section>
-
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-          On the web
+          Socials
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/xkryptios" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoGithub />}
               >
-                @craftzdog
+                @xkryptios
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+            <Link href="https://www.linkedin.com/in/rui-xiang-lin-16a0a9206/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @inkdrop_app (English)
+                Ruixiang Lin
               </Button>
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
+            <Link href="https://www.instagram.com/ahxiang_rx/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoInstagram />}
               >
-                @craftzdog
+                @ahxiang_rx
               </Button>
             </Link>
           </ListItem>
         </List>
-
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid> */}
-
-        <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
     </Container>
   </Layout>

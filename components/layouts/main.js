@@ -2,7 +2,7 @@ import Head from 'next/head'
 // import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
-// import Footer from '../footer'
+import Footer from '../footer'
 // import VoxelDogLoader from '../voxel-dog-loader'
 
 // const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
@@ -18,14 +18,9 @@ const Main = ({ children, router }) => {
                 <meta name="description" content="Ruixiang Lin's homepage" />
                 <meta name="author" content="Ruixiang Lin" />
                 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-                {/* <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" /> */}
-                {/* <meta name="twitter:site" content="@craftzdog" /> */}
-                {/* <meta name="twitter:creator" content="@craftzdog" /> */}
-                {/* <meta name="twitter:image" content="https://www.craftz.dog/card.png" /> */}
                 <meta property="og:site_name" content="Ruixiang Lin" />
                 <meta name="og:title" content="Ruixiang Lin" />
                 <meta property="og:type" content="website" />
-                {/* <meta property="og:image" content="https://www.craftz.dog/card.png" /> */}
                 <title>Ruixiang Lin - Home</title>
             </Head>
 
@@ -36,7 +31,7 @@ const Main = ({ children, router }) => {
 
                 {children}
 
-                {/* <Footer /> */}
+                <Footer />
             </Container>
         </Box>
     )

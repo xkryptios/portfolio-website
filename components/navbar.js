@@ -15,8 +15,9 @@ import {
     useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-// import ThemeToggleButton from './theme-toggle-button'
-// import { IoLogoGithub } from 'react-icons/io5'
+import ThemeToggleButton from './theme-toggle-button'
+import { IoLogoGithub } from 'react-icons/io5'
+import { useEffect, useState } from 'react'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
@@ -71,19 +72,36 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
-                    <LinkItem href="/project" path={path}>
-                        Projects
-                    </LinkItem>
                     <LinkItem href="/experience" path={path}>
                         Experience
                     </LinkItem>
-                    <LinkItem href="/contact" path={path}>
-                        Contact Me
+                    <LinkItem href="/project" path={path}>
+                        Projects
                     </LinkItem>
+                    <LinkItem href="/more" path={path}>
+                        More
+                    </LinkItem>
+                    {/* <LinkItem
+                        target="_blank"
+                        href="https://https://github.com/xkryptios"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                        style={{ gap: 4 }}
+                        pl={2}
+                    >
+                        <IoLogoGithub />
+                        Github
+                    </LinkItem> */}
+
+
+                    {/* <LinkItem href="/project" path={path}>
+
+                    </LinkItem> */}
                 </Stack>
 
                 <Box flex={1} align="right">
-                    {/* <ThemeToggleButton /> */}
+                    <ThemeToggleButton />
 
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu isLazy id="navbar-menu">
@@ -100,11 +118,11 @@ const Navbar = props => {
                                 <NextLink href="/experience" passHref>
                                     <MenuItem as={Link}>Experience</MenuItem>
                                 </NextLink>
-                                <NextLink href="/projects" passHref>
-                                    <MenuItem as={Link}>Project</MenuItem>
+                                <NextLink href="/project" passHref>
+                                    <MenuItem as={Link}>Projects</MenuItem>
                                 </NextLink>
-                                <NextLink href="/contact" passHref>
-                                    <MenuItem as={Link}>Contact Me</MenuItem>
+                                <NextLink href="/more" passHref>
+                                    <MenuItem as={Link}>More</MenuItem>
                                 </NextLink>
                             </MenuList>
                         </Menu>
