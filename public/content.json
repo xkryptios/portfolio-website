@@ -1,0 +1,65 @@
+{
+  "home": {},
+  "experience": {
+    "work": [
+      {
+        "title": "Software Engineer Intern, FaceSec Singapore",
+        "year": "May 2022 - Aug 2022",
+        "description": [
+          "Designed UI for Admin and Client Consoles with Figma",
+          "Developed full-stack web application on React, Vue, and SpringBoot",
+          "Configure automated integration and validation of changes through GitLab CI/CD",
+          "Manage dockerized micro-service applications on AWS"
+        ]
+      }
+    ],
+    "competitions": [
+      {
+        "title": "LifeHack 2021, NUS",
+        "date": "2021-07-24",
+        "description": [
+          "To assist in the transition into a post-pandamic era, develop a viable solution to encourage more face-to-face interaction",
+          "Created an proximity based match-making mobile app with google map API for users to have meals together",
+          "Users are able to selected a eatery on the map within the app",
+          "Users who select the same location would be matched and begin arrangement of meal through real-time messaging feature"
+        ]
+      },
+      {
+        "title": "CodeFiesta 2021, GovTech",
+        "date": "2021-06-27",
+        "description": [
+          "The strict travel control during pandamic has let to information scattering and constant change of required processes for travel, provide a solution to reduce pain points of travellers ",
+          "Made use of design thinking process and interview affected travellers",
+          "Develop a integrated webapp where information could be easily accessed and updated with minimal delay by collaborating with government bodies"
+        ]
+      },
+      {
+        "title": "IdeasJam2021, NTU",
+        "date": "2021-01-23",
+        "description": [
+          "To increase local vegetable Production, develop a SMART solution to make urban farming more accessible and efficient in Singapore",
+          "Developed a webapp to monitor and collect sensor readings from hydroponics",
+          "Use machine learning on sensor readings to predict optimal condition for plant growth",
+          "Automate growing condition in the green house to minimise plant growth defects"
+        ]
+      },
+      {
+        "title": "Shopee Code League 2021",
+        "date": "2021-03-20",
+        "description": [
+          "Competed against teams within Southeast Asia to solve problems in the categories of Data Analytics, Data Science and Data Structures and Algorithms."
+        ]
+      },
+      {
+        "title": "BrainHack CDDC CTF 2021, DSTA",
+        "date": "2021-06-25",
+        "description": [
+          "Joined a CTF the first time to have learn about vulnerabilities and tools used for exploitation"
+        ]
+      }
+    ]
+  },
+
+  "projects": {},
+  "more": {}
+}
