@@ -18,10 +18,7 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { GridItem } from '../components/grid-item.js';
 import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
-// import thumbYouTube from '../public/images/links/youtube.png';
-// import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png';
 import Image from 'next/image';
-// import Resume from '../public/files/resume.pdf'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
@@ -66,7 +63,7 @@ const Home = () => {
               overflow="hidden"
             >
               <ProfileImage
-                src="/images/test1.jpg"
+                src="/images/dp.png"
                 alt="Profile image"
                 borderRadius="full"
                 width="100%"
