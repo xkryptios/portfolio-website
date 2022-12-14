@@ -11,8 +11,8 @@ import {
     chakra,
 } from '@chakra-ui/react';
 
-const Projects = () => {
+const MoreInfo = () => {
     return <div>More about me!</div>;
 };
 
-export default Projects;
+export default MoreInfo;

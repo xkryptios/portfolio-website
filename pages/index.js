@@ -110,7 +110,7 @@ const Home = () => {
               Languages
             </Heading>
             <Paragraph>
-              Python, Javascript, Typescript, Java, C, HTML/CSS
+              Python, Javascript, Typescript, Java, C, HTML/CSS, SQL
             </Paragraph>
             <br />
             <Heading variant='subsection-title'>

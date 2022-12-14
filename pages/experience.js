@@ -15,15 +15,15 @@ import {
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph';
 import { BioYear } from '../components/bio'
-import content from '../public/content.json'
+import content from '../public/data/experience.json'
 
-const works = content.experience.work
-const competitions = content.experience.competitions
+const works = content.work
+const competitions = content.competitions
 
 const Experience = () => {
   const bgColor = useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')
   return (
-    <Layout>
+    <Layout title="Experience">
       <Container>
         <Heading variant='section-title'>
           Work Experience
