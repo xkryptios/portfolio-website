@@ -17,7 +17,8 @@ const Main = ({ children, router }) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <meta name="description" content="Ruixiang Lin's homepage" />
                 <meta name="author" content="Ruixiang Lin" />
-                <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+                <link rel="apple-touch-icon" href="corgi.png" />
+                <link rel="shortcut icon" href="/corgi.png" type="image/x-icon" />
                 <meta property="og:site_name" content="Ruixiang Lin" />
                 <meta name="og:title" content="Ruixiang Lin" />
                 <meta property="og:type" content="website" />

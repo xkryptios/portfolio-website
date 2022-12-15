@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { Text, useColorModeValue } from '@chakra-ui/react'
 // import ComputerIcon from './icons/ComputerIcon'
 import styled from '@emotion/styled'
+import Paws from './icons/paws'
 
 const LogoBox = styled.span`
   font-weight: bold;
@@ -24,7 +25,7 @@ const Logo = () => {
         <Link href="/" scroll={false} legacyBehavior>
             <a>
                 <LogoBox>
-                    {/* <ComputerIcon /> */}
+                    <Paws />
                     <Text
                         color={useColorModeValue('gray.800', 'whiteAlpha.900')}
                         fontFamily='M PLUS Rounded 1c", sans-serif'

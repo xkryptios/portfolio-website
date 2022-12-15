@@ -37,8 +37,8 @@ const Project = () => (
                 </ListItem>
             </List>
 
-            <ProjectImage src="/images/projects/youtility_2.png" alt="YOUtility" />
-            <ProjectImage src="/images/projects/youtility_1.png" alt="YOUtility" />
+            <ProjectImage src="/images/projects/portfolio_0.png" alt="YOUtility" />
+            <ProjectImage src="/images/projects/portfolio_1.png" alt="YOUtility" />
         </Container>
     </Layout>
 )

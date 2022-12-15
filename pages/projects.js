@@ -7,6 +7,7 @@ import thumbTest from '../public/images/projects/test_eyecatch.png'
 import thumbYoutility from '../public/images/projects/test.png'
 import thumbRecipely from '../public/images/projects/recipely_0.png'
 import thumbBeam from '../public/images/projects/beam_0.png'
+import thumbPortfolio from '../public/images/projects/portfolio_0.png'
 
 const Projects = () => (
   <Layout title="Projects">
@@ -32,7 +33,7 @@ const Projects = () => (
 
 
         <Section>
-          <ProjectGridItem id="portfolio-website" title="Portfolio Website" thumbnail={thumbTest} >
+          <ProjectGridItem id="portfolio-website" title="Portfolio Website" thumbnail={thumbPortfolio} >
             A website to share more information about myself
           </ProjectGridItem>
 
