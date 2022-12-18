@@ -1,14 +1,14 @@
 import Head from 'next/head'
-// import dynamic from 'next/dynamic'
+import dynamic from 'next/dynamic'
 import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
-// import VoxelDogLoader from '../voxel-dog-loader'
+import VoxelDogLoader from '../voxel-loader'
 
-// const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
-//     ssr: false,
-//     loading: () => <VoxelDogLoader />
-// })
+const VoxelRoom = dynamic(() => import('../voxel-object'), {
+    ssr: false,
+    loading: () => <VoxelDogLoader />
+})
 
 const Main = ({ children, router }) => {
     return (
@@ -28,7 +28,7 @@ const Main = ({ children, router }) => {
             <NavBar path={router.asPath} />
 
             <Container maxW="container.md" pt={14}>
-                {/* <LazyVoxelDog />sl */}
+                <VoxelRoom />
 
                 {children}
 
