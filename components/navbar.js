@@ -16,8 +16,6 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-// import { IoLogoGithub } from 'react-icons/io5'
-// import { useEffect, useState } from 'react'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
@@ -46,6 +44,7 @@ const Navbar = props => {
             as="nav"
             w="100%"
             bg={useColorModeValue('#ffffff40', '#20202380')}
+            // bg={useColorModeValue('blue', 'green')}
             css={{ backdropFilter: 'blur(10px)' }}
             zIndex={2}
             {...props}
@@ -81,23 +80,6 @@ const Navbar = props => {
                     <LinkItem href="/more" path={path}>
                         More
                     </LinkItem>
-                    {/* <LinkItem
-                        target="_blank"
-                        href="https://https://github.com/xkryptios"
-                        path={path}
-                        display="inline-flex"
-                        alignItems="center"
-                        style={{ gap: 4 }}
-                        pl={2}
-                    >
-                        <IoLogoGithub />
-                        Github
-                    </LinkItem> */}
-
-
-                    {/* <LinkItem href="/project" path={path}>
-
-                    </LinkItem> */}
                 </Stack>
 
                 <Box flex={1} align="right">

@@ -1,18 +1,11 @@
 import {
-    Link,
-    Container,
-    Heading,
-    Box,
-    SimpleGrid,
-    Button,
-    List,
-    ListItem,
-    useColorModeValue,
-    chakra,
+    Flex
 } from '@chakra-ui/react';
 
 const MoreInfo = () => {
-    return <div>More about me!</div>;
+    return <Flex my='40vh' justify='center'>
+        Coming Soon!
+    </Flex>;
 };
 
 export default MoreInfo;

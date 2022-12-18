@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'
@@ -32,18 +32,18 @@ const Projects = () => (
         </Section>
 
 
-        <Section>
+        <Section delay={0.1}>
           <ProjectGridItem id="portfolio-website" title="Portfolio Website" thumbnail={thumbPortfolio} >
             A website to share more information about myself
           </ProjectGridItem>
 
         </Section>
-
+        {/* 
         <Section delay={0.1}>
           <ProjectGridItem id="secret-confession" title="Secret Confession" thumbnail={thumbTest}>
             A website that provides a platform for anonymous sharing of secrets
           </ProjectGridItem>
-        </Section>
+        </Section> */}
 
         <Section delay={0.1}>
           <ProjectGridItem id="beam-calculator" title="Beam Calculator GUI" thumbnail={thumbBeam}>
@@ -75,4 +75,4 @@ const Projects = () => (
 )
 
 export default Projects
-export { getServerSideProps } from '../components/chakra'
+// export { getServerSideProps } from '../components/chakra'
