@@ -79,8 +79,7 @@ const Home = () => {
                 </Heading>
                 <Paragraph>
                     I am Rui Xiang, a penultimate Computer Science student in Nanyang
-                    Technological University. I have passion in Tech and is eager to learn
-                    about new technologies. I love to develop functional applications.
+                    Technological University. I enjoy exploring new technologies and keen to gain experience in the software field.
                 </Paragraph>
 
                 <Box align="center" my={4}>
