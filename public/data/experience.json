@@ -4,10 +4,10 @@
       "title": "Software Engineer Intern, FaceSec Singapore",
       "year": "May 2022 - Aug 2022",
       "description": [
-        "Designed UI for Admin and Client Consoles with Figma",
-        "Developed full-stack web application on React, Vue, and SpringBoot",
-        "Configure automated integration and validation of changes through GitLab CI/CD",
-        "Manage dockerized micro-service applications on AWS"
+        "Tasked with full-stack development of admin console to aggregate and manage client subscriptions and consumption of services.",
+        "Designed intuitive user interface with Figma and implemented with ReactJS and Material UI.",
+        "Craft and conduct unit tests with Spring MockMVC, focusing on edge cases to ensure software quality and performance.",
+        "Incorporated GitLab CI/CD to provide continuous integration service in order to automated the process of building and testing of code for smooth deployment process."
       ]
     }
   ],

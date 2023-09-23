@@ -78,7 +78,7 @@ const Home = () => {
                     About Me
                 </Heading>
                 <Paragraph>
-                    I am Rui Xiang, a penultimate student pursuing Bachlor of Engineering ( Computer Science) in Nanyang
+                    I am Rui Xiang, a final year student pursuing Bachlor of Engineering (Computer Science) in Nanyang
                     Technological University. I enjoy exploring new technologies and keen to gain experience in the software field.
                 </Paragraph>
 
