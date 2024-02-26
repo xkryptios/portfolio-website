@@ -1,12 +1,20 @@
 {
   "work": [
     {
+      "title": "Software Engineer Intern, OMNA.IO",
+      "year": "Jan 2024 - Present",
+      "description": [
+        "Spearhead automated testing by designing and implementing test cases to improve speed to production using Vitest and SST.",
+        "Implemented frontend UI for web application and debug render issues in ReactJs.",
+        "Collaborated in development of serverless application that synchronise multiple retail platforms for users in NodeJs and MongoDB."
+      ]
+    },
+    {
       "title": "Software Engineer Intern, FaceSec Singapore",
       "year": "May 2022 - Aug 2022",
       "description": [
-        "Tasked with full-stack development of admin console to aggregate and manage client subscriptions and consumption of services.",
-        "Designed intuitive user interface with Figma and implemented with ReactJS and Material UI.",
-        "Craft and conduct unit tests with Spring MockMVC, focusing on edge cases to ensure software quality and performance.",
+        "Tasked with full-stack development of admin console to aggregate and manage client subscriptions and consumption of services in ReactJs and Java Springboot.",
+        "Crafted and conducted unit tests with Spring Test, focusing on edge cases to ensure software quality.",
         "Incorporated GitLab CI/CD to provide continuous integration service in order to automated the process of building and testing of code for smooth deployment process."
       ]
     }
