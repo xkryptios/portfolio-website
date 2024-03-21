@@ -27,4 +27,4 @@ jobs:
         run: echo $super_secret >> ./test.txt
 
       - name: do stuff3
-        run: cat ./test.txt
+        run: pwd
