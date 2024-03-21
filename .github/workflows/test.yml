@@ -1,0 +1,35 @@
+name: CI for Dev
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    env:
+      super_secret: ${{secrets.SOME_SECRET}}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: doing stuff
+        run: echo $super_secret
+
+      - name: do stuff2
+        run: echo ${{env.SOME_SECRET}} > ./test.txt
+
+      - name: do stuff3
+        run: pwd
+
+      - name: do stuff3
+        run: |
+          pwd
+          cat test.txt
