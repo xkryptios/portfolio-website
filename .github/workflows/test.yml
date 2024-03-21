@@ -24,7 +24,7 @@ jobs:
         run: echo $super_secret
 
       - name: do stuff2
-        run: echo $super_secret > ./test.txt
+        run: echo ${{env.SOME_SECRET}} > ./test.txt
 
       - name: do stuff3
         run: pwd
