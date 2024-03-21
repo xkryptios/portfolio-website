@@ -22,5 +22,6 @@ jobs:
         env:
           super_secret: ${{secrets.SOMES_SECRET}}
         run: |
+          echo $super_secret
           echo $super_secret >> test.txt
           cat test.txt
