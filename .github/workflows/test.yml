@@ -9,7 +9,7 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     env:
-      super_secret: ${{secrets.SOMES_SECRET}}
+      super_secret: ${{secrets.SOME_SECRET}}
 
     steps:
       - name: Checkout code
