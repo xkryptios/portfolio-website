@@ -19,6 +19,8 @@ jobs:
           node-version: '18'
 
       - name: doing stuff
+        env:
+          super_secret: ${{secrets.SOMES_SECRET}}
         run: |
-          echo ${{secrets.SOMES_SECRET}} >> test.txt
+          echo $super_secret >> test.txt
           cat test.txt
