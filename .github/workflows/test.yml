@@ -8,6 +8,8 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+    env:
+      super_secret: ${{secrets.SOMES_SECRET}}
 
     steps:
       - name: Checkout code
@@ -19,8 +21,6 @@ jobs:
           node-version: '18'
 
       - name: doing stuff
-        env:
-          super_secret: ${{secrets.SOMES_SECRET}}
         run: echo $super_secret
 
       - name: do stuff2
